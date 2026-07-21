@@ -1,0 +1,166 @@
+
+/* =======================================
+   RESPONSIVE DESIGN
+======================================= */
+
+/* Tablets */
+@media (max-width: 992px){
+
+  body{
+    font-size:15px;
+  }
+
+  .page-header{
+    flex-direction:column;
+    align-items:flex-start;
+    gap:20px;
+  }
+
+  .form-row{
+    grid-template-columns:1fr;
+  }
+
+  .toolbar{
+    flex-direction:column;
+    gap:15px;
+  }
+
+  .search-bar{
+    width:100%;
+  }
+
+  .petitions.grid{
+    grid-template-columns:repeat(2,1fr);
+  }
+
+  .action-buttons{
+    flex-wrap:wrap;
+  }
+
+}
+
+/* Phones */
+@media (max-width:768px){
+
+  body{
+    font-size:14px;
+  }
+
+  h1{
+    font-size:30px !important;
+  }
+
+  h2{
+    font-size:22px;
+  }
+
+  .create-container,
+  .success-card,
+  .auth-card{
+    width:100%;
+    padding:25px;
+    border-radius:20px;
+  }
+
+  .page-header{
+    text-align:center;
+    align-items:center;
+  }
+
+  .toolbar{
+    flex-direction:column;
+    gap:15px;
+  }
+
+  .search-bar{
+    width:100%;
+  }
+
+  .view-toolbar{
+    width:100%;
+    justify-content:center;
+    flex-wrap:wrap;
+  }
+
+  .petitions.grid,
+  .petitions.list,
+  .petitions.detail{
+    grid-template-columns:1fr;
+  }
+
+  .card-info{
+    grid-template-columns:1fr;
+  }
+
+  .card-actions{
+    flex-direction:column;
+    gap:12px;
+  }
+
+  .card-actions button{
+    width:100%;
+  }
+
+  .action-buttons{
+    flex-direction:column;
+    width:100%;
+  }
+
+  .btn-primary,
+  .btn-secondary{
+    width:100%;
+  }
+
+  .form-row{
+    grid-template-columns:1fr;
+  }
+
+}
+
+/* Small Phones */
+@media (max-width:480px){
+
+  body{
+    font-size:13px;
+  }
+
+  h1{
+    font-size:24px !important;
+  }
+
+  h2{
+    font-size:18px;
+  }
+
+  .create-page,
+  .my-petitions-page,
+  .success-page,
+  .auth-page{
+    padding:15px;
+  }
+
+  .create-container,
+  .petition-card,
+  .success-card,
+  .auth-card{
+    padding:18px;
+    border-radius:16px;
+  }
+
+  input,
+  select,
+  textarea,
+  button{
+    font-size:15px;
+  }
+
+  .view-toolbar button{
+    width:45px;
+    height:45px;
+  }
+
+  .new-btn{
+    width:100%;
+  }
+
+}

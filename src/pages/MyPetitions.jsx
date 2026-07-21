@@ -5,6 +5,15 @@ import {
   getMyPetitions,
   deletePetition,
 } from "../firebase/petitions";
+import {
+  FaTrash,
+  FaEdit,
+  FaEye,
+  FaThLarge,
+  FaList,
+  FaAlignLeft,
+ FaPlusCircle 
+} from "react-icons/fa";
 
 export default function MyPetitionsPage({ user }) {
     const navigate = useNavigate();
@@ -66,12 +75,13 @@ const [viewMode, setViewMode] = useState("grid");
         <p>Manage and track all the petitions you've created.</p>
       </div>
 
-      <button
-        className="new-btn"
-        onClick={() => navigate("/create")}
-      >
-        + New Petition
-      </button>
+   <button
+  className="new-btn"
+  onClick={() => navigate("/create")}
+>
+  <FaPlusCircle />
+  <span>New Petition</span>
+</button>
     </div>
 
     <div className="toolbar">
@@ -83,26 +93,26 @@ const [viewMode, setViewMode] = useState("grid");
 
       <div className="view-toolbar">
 
-        <button
-          onClick={() => setViewMode("grid")}
-          className={viewMode === "grid" ? "active" : ""}
-        >
-          ⊞
-        </button>
+<button
+  onClick={() => setViewMode("grid")}
+  className={viewMode === "grid" ? "active" : ""}
+>
+  <FaThLarge />
+</button>
 
-        <button
-          onClick={() => setViewMode("list")}
-          className={viewMode === "list" ? "active" : ""}
-        >
-          ☰
-        </button>
+<button
+  onClick={() => setViewMode("list")}
+  className={viewMode === "list" ? "active" : ""}
+>
+  <FaList />
+</button>
 
-        <button
-          onClick={() => setViewMode("detail")}
-          className={viewMode === "detail" ? "active" : ""}
-        >
-          📝
-        </button>
+<button
+  onClick={() => setViewMode("detail")}
+  className={viewMode === "detail" ? "active" : ""}
+>
+  <FaAlignLeft />
+</button>
 
       </div>
 
@@ -157,23 +167,27 @@ const [viewMode, setViewMode] = useState("grid");
 
             </div>
 
-            <div className="card-actions">
+           <div className="card-actions">
 
-              <button className="view-btn">
-                View
-              </button>
+  <button className="view-btn">
+    <FaEye />
+    <span>View</span>
+  </button>
 
-              <button className="edit-btn">
-                Edit
-              </button>
+  <button className="edit-btn">
+    <FaEdit />
+    <span>Edit</span>
+  </button>
 
-             <button
-  className="delete-btn"
-  onClick={() => handleDelete(petition.id)}
->
-  🗑 Delete
-</button>
-            </div>
+  <button
+    className="delete-btn"
+    onClick={() => handleDelete(petition.id)}
+  >
+    <FaTrash />
+    <span>Delete</span>
+  </button>
+
+</div>
 
           </div>
 
