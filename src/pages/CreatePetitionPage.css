@@ -1,0 +1,142 @@
+.create-page{
+    min-height:100vh;
+    padding:50px;
+
+    background-image:url("../assets/auth-background.gif");
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    position:relative;
+}
+.create-page::before{
+    content:"";
+    position:absolute;
+    inset:0;
+
+    background:rgba(255,255,255,.18);
+    backdrop-filter:blur(20px);
+}
+
+.create-container{
+    position:relative;
+    z-index:2;
+
+    width:100%;
+    max-width:900px;
+
+    background:rgba(255,255,255,.85);
+
+    backdrop-filter:blur(25px);
+
+    border-radius:28px;
+
+    padding:45px;
+
+    box-shadow:
+    0 30px 70px rgba(0,0,0,.15);
+}
+
+.create-container h1{
+    font-size:40px;
+    margin-bottom:10px;
+    color:#16213e;
+}
+
+.subtitle{
+    color:#5d6475;
+    margin-bottom:35px;
+}
+.create-page h1 {
+  margin-bottom: 20px;
+}
+
+.create-page form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.create-container input,
+.create-container textarea,
+.create-container select{
+
+    width:100%;
+
+    padding:16px;
+
+    border:none;
+
+    border-radius:16px;
+
+    background:#ffffff;
+
+    font-size:16px;
+
+    box-shadow:
+    inset 0 0 0 1px #d9d9e8;
+
+    transition:.25s;
+}
+.create-container input:focus,
+.create-container textarea:focus,
+.create-container select:focus{
+
+    outline:none;
+
+    box-shadow:
+    0 0 0 4px rgba(89,120,255,.15);
+
+    border-color:#5a6cff;
+}
+
+.form-row{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:20px;
+}
+.submit-btn{
+
+    width:100%;
+
+    padding:18px;
+
+    margin-top:30px;
+
+    border:none;
+
+    border-radius:16px;
+
+    background:linear-gradient(
+        135deg,
+        #6a6cff,
+        #8b7dff
+    );
+
+    color:white;
+
+    font-size:18px;
+
+    font-weight:700;
+
+    cursor:pointer;
+
+    transition:.3s;
+}
+
+.create-page button {
+  background: #2563eb;
+  color: white;
+
+  border: none;
+  padding: 14px;
+
+  border-radius: 8px;
+  cursor: pointer;
+}

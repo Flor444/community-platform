@@ -1,0 +1,50 @@
+.admin-page {
+  min-height: 100vh;
+  padding: 2rem 3rem;
+  background: #f5f5f5;
+}
+
+.admin-page h1 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 1.5rem;
+}
+
+.admin-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+}
+
+.admin-table th {
+  text-align: left;
+  padding: 0.75rem 1rem;
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #666;
+  border-bottom: 1px solid #e0e0e0;
+  background: #fafafa;
+}
+
+.admin-table td {
+  padding: 0.75rem 1rem;
+  font-size: 14px;
+  color: #1a1a1a;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.admin-table tr:last-child td { border-bottom: none; }
+
+.admin-denied {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 50vh;
+  font-size: 1.1rem;
+  color: #666;
+}

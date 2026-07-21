@@ -1,0 +1,21 @@
+{
+  "name": "react-firebase-auth-starter",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "firebase": "^12.13.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^7.15.1",
+    "vite": "^7.3.6"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.2.1"
+  }
+}

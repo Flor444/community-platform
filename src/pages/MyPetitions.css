@@ -1,0 +1,345 @@
+body{
+    margin:0;
+    background:#f8fafc;
+    font-family:"Segoe UI",sans-serif;
+}
+
+.my-petitions-page{
+    min-height:100vh;
+    padding:40px;
+
+    background:
+        radial-gradient(circle at 20% 20%, rgba(255,170,190,.45), transparent 35%),
+        radial-gradient(circle at 80% 15%, rgba(255,210,220,.55), transparent 30%),
+        radial-gradient(circle at 75% 80%, rgba(135,110,255,.45), transparent 35%),
+        radial-gradient(circle at 30% 70%, rgba(170,150,255,.35), transparent 30%),
+        linear-gradient(135deg,#faf7ff,#f5f6ff,#fff4f8);
+
+    background-attachment:fixed;
+}
+.page-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:35px;
+}
+
+.page-header h1{
+    margin:0;
+    color:#0f172a;
+    font-size:38px;
+}
+
+.page-header p{
+    color:#64748b;
+}
+
+.new-btn{
+
+    width:180px;
+
+    height:52px;
+
+    border:none;
+
+    border-radius:16px;
+
+    background:linear-gradient(
+        135deg,
+        #2563eb,
+        #4f46e5
+    );
+
+    color:white;
+
+    font-size:15px;
+
+    font-weight:700;
+
+    cursor:pointer;
+
+    box-shadow:0 18px 35px rgba(37,99,235,.30);
+
+    transition:.3s;
+}
+
+.new-btn:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:0 25px 45px rgba(37,99,235,.40);
+}
+
+.new-btn:hover{
+    background:#1d4ed8;
+}
+
+.toolbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:30px;
+}
+
+.search-bar{
+
+    width:350px;
+    height:50px;
+    border-radius:16px;
+    border:none;
+    padding:0 20px;
+    background:white;
+    box-shadow:0 8px 18px rgba(0,0,0,.08);
+    font-size:15px;
+}
+
+.view-toolbar{
+    display:flex;
+    gap:10px;
+}
+
+.view-toolbar button{
+    width:45px;
+    height:45px;
+    border:none;
+    border-radius:10px;
+    background:white;
+    cursor:pointer;
+    box-shadow:0 2px 8px rgba(0,0,0,.08);
+}
+
+.view-toolbar button.active{
+    background:#2563eb;
+    color:white;
+}
+
+.petitions.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fill,minmax(320px,1fr));
+    gap:25px;
+}
+
+.petitions.list,
+.petitions.detail{
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+
+.petition-card{
+
+    background:rgba(255,255,255,.72);
+
+    backdrop-filter:blur(18px);
+
+    border:1px solid rgba(255,255,255,.45);
+
+    border-radius:24px;
+
+    padding:24px;
+
+    box-shadow:
+        0 20px 45px rgba(30,41,59,.12);
+
+    transition:.35s;
+}
+
+.petition-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:
+        0 35px 60px rgba(30,41,59,.18);
+
+}
+
+.petition-card:hover{
+    transform:translateY(-5px);
+    box-shadow:0 18px 35px rgba(0,0,0,.12);
+}
+
+.card-top{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:20px;
+}
+
+.card-top h2{
+    margin:0;
+    color:#0f172a;
+}
+
+.status{
+    background:#fef3c7;
+    color:#92400e;
+    padding:6px 12px;
+    border-radius:20px;
+    font-size:13px;
+    font-weight:600;
+}
+
+.card-info{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:18px;
+    margin-bottom:25px;
+}
+
+.card-info strong{
+    color:#0f172a;
+}
+
+.card-info p{
+    color:#475569;
+    margin:0;
+}
+
+.card-actions{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:14px;
+    margin-top:25px;
+}
+
+.card-actions button{
+
+    width:100%;
+
+    height:52px;
+
+    border:none;
+
+    border-radius:16px;
+
+    font-size:16px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.25s;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+}
+.view-btn{
+
+    background:linear-gradient(135deg,#2563eb,#4f46e5);
+
+    color:white;
+
+    box-shadow:0 10px 22px rgba(37,99,235,.28);
+}
+
+.view-btn:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:0 18px 35px rgba(37,99,235,.35);
+}
+
+.edit-btn{
+
+    background:white;
+
+    color:#0f172a;
+
+    border:1px solid #dbe4ee;
+
+    box-shadow:0 8px 18px rgba(0,0,0,.05);
+}
+
+.edit-btn:hover{
+
+    background:#f8fafc;
+}
+
+.delete-btn{
+
+    width:100%;
+
+    height:52px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:8px;
+
+    background:linear-gradient(135deg,#ef4444,#dc2626);
+
+    color:white;
+
+    border:none;
+
+    border-radius:16px;
+
+    font-size:15px;
+
+    font-weight:700;
+
+    cursor:pointer;
+
+    box-shadow:0 10px 25px rgba(239,68,68,.30);
+
+    transition:all .3s ease;
+}
+
+.delete-btn:hover{
+
+    transform:translateY(-3px);
+
+    background:linear-gradient(135deg,#dc2626,#b91c1c);
+
+    box-shadow:0 18px 35px rgba(239,68,68,.40);
+}
+
+.delete-btn:active{
+
+    transform:scale(.97);
+}
+
+.delete-btn:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:0 18px 35px rgba(239,68,68,.35);
+}
+.empty-state{
+    text-align:center;
+    margin-top:80px;
+    color:#64748b;
+}
+.view-toolbar{
+
+    display:flex;
+
+    gap:10px;
+}
+
+.view-toolbar button{
+    width:50px;
+    height:50px;
+    border-radius:14px;
+    border:none;
+    background:white;
+    font-size:20px;
+    cursor:pointer;
+    transition:.25s;
+    box-shadow:0 8px 18px rgba(0,0,0,.08);
+}
+
+.view-toolbar button:hover{
+    transform:translateY(-3px);
+}
+
+.view-toolbar .active{
+    background:#2563eb;
+    color:white;
+}

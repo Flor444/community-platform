@@ -1,0 +1,81 @@
+.browse-page {
+  min-height: 100vh;
+  padding: 50px;
+  background: #f5f7fb;
+}
+
+.browse-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.browse-header h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.browse-header p {
+  color: #666;
+  font-size: 1.1rem;
+}
+
+.petition-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill,minmax(320px,1fr));
+  gap: 25px;
+}
+
+.petition-card {
+  background: white;
+  padding: 25px;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+  transition: 0.3s;
+}
+
+.petition-card:hover {
+  transform: translateY(-5px);
+}
+
+.petition-category {
+  display: inline-block;
+  background: #e8f0ff;
+  color: #2563eb;
+  padding: 6px 12px;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.petition-card h2 {
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+.petition-card p {
+  color: #555;
+  line-height: 1.6;
+}
+
+.petition-footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  font-weight: 600;
+}
+
+.status {
+  color: #22c55e;
+}
+
+.view-btn {
+  width: 100%;
+  margin-top: 20px;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(135deg,#2563eb,#7c3aed);
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+}
